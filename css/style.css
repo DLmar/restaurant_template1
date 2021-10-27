@@ -11,42 +11,234 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Tinos', serif;
+    line-height: 1;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Tinos', serif;
 }
+
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+.header {
+    height: 100vh;
+    background: url("../image/bg.png") no-repeat center/cover;
+}
+
+.nav__item img {
+    width: 20px;
+}
+
+.header__top {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    column-gap: 23px;
+    border-right: 2px solid #FFFFFF;
+    height: 70px;
+    padding-right: 35px;
+
+    align-items: center;
+}
+
+.nav__item a {
+    padding-top: 74px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 155px;
+    margin-left: 15px;
+}
+
+.header__phone p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header__button {
+    background: #FF7400;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 0 19px;
+    height: 47px;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.header__main{
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    color: #D67E35;
+    margin-top: 203px;
+    font-weight: normal;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title h2 {
+    font-size: 50px;
+    line-height: 57px;
+    margin-left: 24px;
+}
+
+.header__title h1 {
+    font-size: 80px;
+    line-height: 92px;
+
+}
+
+.header__title p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title p::before,
+.header__title p::after {
+    content: "";
+    display: block;
+    width: 61px;
+    height: 2px;
+    background: #C4C4C4;
+    margin: 0 12px;
+}
+
+.header__main_button {
+    width: 137px;
+    height: 47px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: #FF7400;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.nav__button_mobile {
+    display: none;
+    width: 30px;
+}
+
+.nav__button_mobile div {
+    height: 3px;
+    background: #FF7400;
+    border-radius: 50px;
+}
+.description__blocks{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 31px;
+    justify-content: space-evenly;
+}
+.description__item {
+    margin-top: 50px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    height: 328px;
+    background: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    bottom: 200px;
+    box-shadow: 10px 10px 40px 20px;
+}
+
+.description__title{
+    width: 263px;
+    height: 30px;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #2C2C2C;
+}
+.description__title span{
+    color: #BC9060;
+}
+.description__item p{
+    padding-top: 20px;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #656363;
+}
+
+
+
+
 
